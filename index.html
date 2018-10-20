@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Bootstrap Theme Company Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+ <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ <style>
+.fixed-top h3 {
+  color: blue;
+  font-size: 400%;
+  text-shadow: 2px 2px #9e9e9e;
+}
+.fixed-top h5{
+	color: blue;
+	text-shadow: 2px 2px #9e9e9e;
+}
+    body {
+      font: 400 15px Lato, sans-serif;
+      line-height: 1.8;
+      color: #818181;
+  }
+  h2 {
+      font-size: 24px;
+      text-transform: uppercase;
+      color: #303030;
+      font-weight: 600;
+      margin-bottom: 30px;
+  }
+  h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      color: #303030;
+      font-weight: 400;
+      margin-bottom: 30px;
+  }  
+  
+  .container-fluid {
+      padding: 60px 40px;
+      background-color: #d6f5f5;
+  }
+  .bg-grey {
+      background-color: #adebed;
+  }
+  .logo-small {
+      color: #ff5050;
+      font-size: 50px;
+      background-color: #70dbdb;
+  }
+  .logo {
+      color: #3366ff;
+      font-size: 200px;
+      
+  }
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail img {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 10px;
+  }
+  #services{
+  	background-color: #99e6e6;
+  }
+  #portfolio{
+  	background-color: #33cccc;
+  }
+  #pricing{
+  	background-color: #29a3a3;
+  }
+  #contact{
+  	background-color: #1f7a7a;
+  }
+  
+  #buson{
+  		color: black;
+  	font-size: 1.25em;
+  }
+  
+  #telephone{
+  	color: black;
+  	font-size: 1.25em;
+  }
+  
+  .carousel-control.right, .carousel-control.left {
+      background-image: none;
+      color: #33ccff;
+  }
+  .carousel-indicators li {
+      border-color: #33ccff;
+  }
+  .carousel-indicators li.active {
+      background-color: #33ccff;
+  }
+  .item h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      font-weight: 400;
+      font-style: italic;
+      margin: 70px 0;
+  }
+  .item span {
+      font-style: normal;
+  }
+  .panel {
+      border: 1px solid #000080; 
+      border-radius:0 !important;
+      transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+      box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+      border: 1px solid #008080;
+      background-color: #595959 !important;
+      color: #00b3b3;
+  }
+  .panel-heading {
+      color: #fff !important;
+      background-color: #3399ff !important;
+      padding: 25px;
+      border-bottom: 1px solid transparent;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+      background-color: white !important;
+  }
+  .panel-footer h3 {
+      font-size: 32px;
+  }
+  .panel-footer h4 {
+      color:  #404040;
+      font-size: 14px;
+  }
+  .panel-footer .btn {
+      margin: 15px 0;
+      background-color: #99ebff;
+      color: #fff;
+  }
+  .navbar {
+      margin-bottom: 0;
+      background-color: #6600ff;
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: #00994d !important;
+      background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+  }
+  footer .glyphicon {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color:#004080;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+  }
+  #location{
+  	color: black;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
+    }
+  }
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+			<ul class="nav nav-pills nav-fill">
+  		<li class="nav-item">
+    		<a class="nav-link" href="#about">ABOUT</a>
+  		</li>
+  		<li class="nav-item">
+    		<a class="nav-link" href="#mission">MISSION</a>
+  		</li>
+  		<li class="nav-item">
+    		<a class="nav-link" href="#services">SERVICES</a>
+  		</li>
+  		<li class="nav-item">
+    		<a class="nav-link" href="#portfolio">PORTFOLIO</a>
+  		</li>
+  		<li class="nav-item">
+    		<a class="nav-link" href="#sponsors">SPONSORS</a>
+  		</li>
+  		<li class="nav-item">
+    		<a class="nav-link" href="#contact">CONTACT</a>
+  		</li>
+		</ul>
+<div id="myCarouselExample" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#myCarouselExample" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarouselExample" data-slide-to="1"></li>
+    <li data-target="#myCarouselExample" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="oliveranduly.jpg" alt="">
+      	 <div class="carousel-caption">
+         	<div class="text-center fixed-top"><h3>Sensory Fitness</h3><br><h5>Learn to Move and Move to Learn</h5></div>
+         </div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="crossing.jpg" alt="">
+      	 <div class="carousel-caption">
+         	<div class="text-center fixed-top"><h3>Sensory Fitness</h3><br><h5>Learn to Move and Move to Learn</h5></div>
+         </div>  
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="balance.jpg"  alt="">
+         <div class="carousel-caption">
+         	<div class="text-center fixed-top"><h3>Sensory Fitness</h3><br><h5>Learn to Move and Move to Learn</h5></div>
+         </div>
+    </div>
+  </div>
+</div> 
+</div>
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>About Sensory Fitness</h2><br>
+      <h4>Sensory Fitness is for everyone, however it specializes in working with kids and adults with ASD, SPD, ADHD, 
+      learning disabilities, and other neurodiversities! We use games, exercises, and challenges to promote health, increase
+      whole body strength, develop body awareness, strengthen core, and improve whole body coordination. Sensory Fitness
+      uses a sensory integrative approach and utilizes primitive and postural reflex exercises to help with gross motor,
+      fine motor, and visual motor to promote neural pathways needed for moving, learning, and living a well-rounded life!</h4><br>
+      <h2>About Matt Sloan</h2>
+      <h4>Matt Sloan is an occupational therapy assistant who specializes in sensory integration and primitive reflex integration.
+      Matt was a special education teacher for 13 years in a vast field of environments mostly working in the field
+      of sever social/emotional disorders and neurological differences. Teaching everything from the general curriculum to social
+      skills to adaptive PE. Matt is also a personal trainer with years of experience in mixed martial arts, boxing, wrestling, 
+      jujitsu, and an array of outdoor recreation sports. Bringing his years of experience together to work with kids
+      and adults of all abilities, Matt has created Sensory Fitness to help people from all walks of life achieve 
+      a sound body to a sound mind.</h4>
+     </div>
+     <div class="row">
+    		<div class="col-sm-6">
+      		<div class="card text-center" style="width: 23.5rem;">
+  					<img class="card-img-top" src="matt.jpg" alt="">
+  						<div class="card-body">
+    						<h5 class="card-title">Matt Sloan</h5>
+    						<p class="card-text"></p>
+    						<a href="#contact" class="btn btn-primary">CONTACT</a>
+  						</div>
+    			</div>
+  			</div>
+    	</div>
+  </div>
+</div>
+<div id=mission class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+  	<h2>MISSION</h2><br>
+      <h4><strong>MISSION:</strong> My mission is to get kids moving, be more comfortable in their bodies, and interact with people and the world to be able to regulate themselves, attend everyday activities, and achieve higher cognitive thought.</h4>
+  	</div>
+  	 <div class="row">
+    		<div class="col-sm-8">
+      		<div class="card text-center" style="width: 26rem;">
+  					<img class="card-img-top" src="mattsmission.jpg" alt="">
+  						<div class="card-body">
+  						</div>
+    			</div>
+  			</div>
+    	</div>
+	</div>
+</div>
+<!-- Container (Services Section) -->
+<div id="services" class="container-fluid text-center">
+  <h2>SERVICES</h2>
+  <h4>What we offer</h4>
+	<div class="row">
+  	<div class="col-xm-6 col-md-4">
+    	<div class="thumbnail">
+      		<div class="caption">
+      				<img src="sessions.jpg" alt="..." class="img-thumbnail">
+        	<h3>One-on-One Sessions</h3>
+        	<p>One-on-One sessions ensure that children get the attention they need to address their fitness
+        	and sensory needs. Everything from martial arts to obstacle courses to outdoor recreation
+        	is an option for clients to get fit, feel good, and discover or rediscover movement!</p>
+        	<p><a href="#contact" class="btn btn-primary" role="button">Contact</a></p>
+      	</div>
+    	</div>
+  	</div>
+  	<div class="col-xm-6 col-md-4">
+    	<div class="thumbnail">
+      		<div class="caption">
+      				<img src="oliveranduly.jpg" alt="..." class="img-thumbnail">
+        	<h3>Classes</h3>
+        	<p>Classes are primarily for abut not limited to kids. Classes provide a chance for socialization
+        	, team work, and are a ton of fun!!</p>
+        	<p><a href="#contact" class="btn btn-primary" role="button">Contact</a></p>
+      	</div>
+    	</div>
+  	</div>
+  	<div class="col-xm-6 col-md-4">
+    	<div class="thumbnail">
+      		<div class="caption">
+      			<img src="consultation.jpg" alt="..." class="img-thumbnail">
+        	<h3>Consultation</h3>
+        	<p>With experience in the classroom and schools, sensory integration and primitive reflex integration,
+        	and physical fitness Matt is qualified to collaborate with parents, teachers, and schools to discuss sensory 
+        	strategies, integrative exercises, and the importance of movement in multiple environments.</p>
+        	<p><a href="#contact" class="btn btn-primary" role="button">Contact</a></p>
+      	</div>
+    	</div>
+  	</div>
+	</div>
+</div>
+<!-- Container (Portfolio Section) -->
+<div id="portfolio" class="container-fluid text-center bg-grey">
+  <h2>Portfolio</h2><br>
+  <h4>What we have created</h4>
+  <div class="row text-center slideanim">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="paris.jpg" alt="Paris" width="400" height="300">
+        <p><strong>Paris</strong></p>
+        <p>Yes, we built Paris</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="newyork.jpg" alt="New York" width="400" height="300">
+        <p><strong>New York</strong></p>
+        <p>We built New York</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="sanfran.jpg" alt="San Francisco" width="400" height="300">
+        <p><strong>San Francisco</strong></p>
+        <p>Yes, San Fran is ours</p>
+      </div>
+    </div>
+  </div><br>
+  
+  <h2>What our Clients are saying</h2>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <h4>"Spending two days a week with Sensory Fitness has completely changed my child's life.<br>It builds strength, confidence and joy!"<br><span>Sean Puno<br><h6>Des Moines Wa</h6></span></h4>
+      </div>
+      <div class="carousel-item">
+        <h4>"Sensory Fitness has been a key asset in our families journey through ASD, i dont't know where we'd be without Matt
+        He is patient, encouraging, knowledgeable and an inspiration.<br><span>Hernandez Family</span></h4>
+      </div>
+      <div class="carousel-item">
+        <h4><br><span></span></h4>
+      </div>
+    </div>
+    <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+  </div>
+</div>
+
+<!-- Container (Sponsors Section) -->
+<div id="sponsors" class="container-fluid">
+	<div class="text-center">
+		<h1><b>Sponsors</b></h1>
+	</div>
+	<div class="card-deck">
+		<div class="row slideanim">
+  		<div class="col-sm-5">
+    		<div class="card text-center">
+    		  	<img class="card-img" src="wreckmethod.png" alt="">
+      		<div class="card-body">
+        		<h5 class="card-title">ABOUT WECKMETHOD</h5>
+        		<p class="card-text">“It’s about mastering the vertical movements and rotational movements of the body. Every movement, athletic or otherwise, stems from these two forms of motion.” 
+								<br>David Weck</br>.</p>
+        		 <div class="card-footer">
+        			<a href="https://www.weckmethod.com/" class="btn btn-primary">WeckMethod</a>
+        		 </div>
+      		</div>
+    		</div>
+  		</div>
+  		<div class="col-sm-5">
+    		<div class="card text-center">
+    			<img class="card-img" src="dakine.png" alt="">
+      		<div class="card-body">
+        		<h5 class="card-title"></h5>
+        		<p class="card-text">“To provide superlative coaching and foster the best possible learning environment indoors, on the beach, or grass. To teach our family of athletes the fundamentals of the game of volleyball, and cultivate the desire in each to compete at the highest level.  We want our athletes to develop the work ethic and discipline it takes to be an elite athlete, along with the importance of sportsmanship. We want to create complete athletes on the court, and even better people off the court.” Aloha.</p>
+        		<div class="card-footer">
+        			<a href="https://dakinevc.com/" class="btn btn-primary">Da Kine</a>
+        		</div>
+      		</div>
+    		</div>
+  		 </div>
+  		</div>
+		</div>
+	</div>
+</div>
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid bg-grey">
+  <h2 class="text-center">CONTACT</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p id="location"><span class="glyphicon glyphicon-map-marker"></span> Tacoma WA</p>
+      <p id="telephone"><span class="glyphicon glyphicon-phone"></span> (619) 623-1556</p>
+      <p id="buson"><span class="glyphicon glyphicon-envelope"></span> sensoryfitnesstacoma@gmail.com</p>
+    </div>
+    <div class="col-sm-7 slideanim">
+      <div class="row">
+        <div class="typeform-widget" data-url="https://franciscohernandez3.typeform.com/to/EK4fOx" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=EK4fOx&utm_source=typeform.com-12673858-Basic&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=EN" style="color: #999" target="_blank">Typeform</a> </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>Created By <a href="https://flhernandez.herokuapp.com/" title="Visit mypage">Frank Hernandez</a></p>
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+</body>
+</html>
