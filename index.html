@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-
-  <title>Bootstrap Theme Company Page</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+	<head>
+ 
+  	<title>Sensory Fitness</title>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  </head>
+ 	 
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="/open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -14,11 +17,11 @@
 .fixed-top h3 {
   color: blue;
   font-size: 400%;
-  text-shadow: 2px 2px #9e9e9e;
+  font-weight: bold;
 }
 .fixed-top h5{
 	color: blue;
-	text-shadow: 2px 2px #9e9e9e;
+	font-weight: bold;
 }
     body {
       font: 400 15px Lato, sans-serif;
@@ -70,7 +73,7 @@
   #services{
   	background-color: #99e6e6;
   }
-  #portfolio{
+  #testimonials{
   	background-color: #33cccc;
   }
   #pricing{
@@ -79,7 +82,9 @@
   #contact{
   	background-color: #1f7a7a;
   }
-  
+  #location{
+  	color: black;
+  }
   #buson{
   		color: black;
   	font-size: 1.25em;
@@ -183,9 +188,6 @@
       -webkit-animation-duration: 1s;
       visibility: visible;
   }
-  #location{
-  	color: black;
-  }
   @keyframes slide {
     0% {
       opacity: 0;
@@ -222,8 +224,11 @@
     }
   }
   </style>
-</head>
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<body>
+
+	<div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+		<a class="navbar"></a>
 			<ul class="nav nav-pills nav-fill">
   		<li class="nav-item">
     		<a class="nav-link" href="#about">ABOUT</a>
@@ -235,7 +240,7 @@
     		<a class="nav-link" href="#services">SERVICES</a>
   		</li>
   		<li class="nav-item">
-    		<a class="nav-link" href="#portfolio">PORTFOLIO</a>
+    		<a class="nav-link" href="#testimonials">TESTIMONIALS</a>
   		</li>
   		<li class="nav-item">
     		<a class="nav-link" href="#sponsors">SPONSORS</a>
@@ -244,6 +249,9 @@
     		<a class="nav-link" href="#contact">CONTACT</a>
   		</li>
 		</ul>
+	</div>
+</div>	
+<div class="container">		
 <div id="myCarouselExample" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#myCarouselExample" data-slide-to="0" class="active"></li>
@@ -252,7 +260,7 @@
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100" src="oliveranduly.jpg" alt="">
+      <img class="d-block w-100" src="oneonone.jpg" alt="">
       	 <div class="carousel-caption">
          	<div class="text-center fixed-top"><h3>Sensory Fitness</h3><br><h5>Learn to Move and Move to Learn</h5></div>
          </div>
@@ -271,6 +279,7 @@
     </div>
   </div>
 </div> 
+</div>
 </div>
 <!-- Container (About Section) -->
 <div id="about" class="container-fluid">
@@ -365,33 +374,8 @@
 	</div>
 </div>
 <!-- Container (Portfolio Section) -->
-<div id="portfolio" class="container-fluid text-center bg-grey">
-  <h2>Portfolio</h2><br>
-  <h4>What we have created</h4>
-  <div class="row text-center slideanim">
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="paris.jpg" alt="Paris" width="400" height="300">
-        <p><strong>Paris</strong></p>
-        <p>Yes, we built Paris</p>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="newyork.jpg" alt="New York" width="400" height="300">
-        <p><strong>New York</strong></p>
-        <p>We built New York</p>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="sanfran.jpg" alt="San Francisco" width="400" height="300">
-        <p><strong>San Francisco</strong></p>
-        <p>Yes, San Fran is ours</p>
-      </div>
-    </div>
-  </div><br>
-  
+
+<div id="testimonials" class="container-fluid text-center">  
   <h2>What our Clients are saying</h2>
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
@@ -413,6 +397,8 @@
         <h4><br><span></span></h4>
       </div>
     </div>
+  </div>
+ </div> 
     <!-- Left and right controls -->
   <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
     <span class="carousel-control-prev-icon"></span>
@@ -460,13 +446,15 @@
 	</div>
 </div>
 <!-- Container (Contact Section) -->
-<div id="contact" class="container-fluid bg-grey">
+
+<div id="contact" class="container-fluid">
   <h2 class="text-center">CONTACT</h2>
   <div class="row">
     <div class="col-sm-5">
-      <p id="location"><span class="glyphicon glyphicon-map-marker"></span> Tacoma WA</p>
-      <p id="telephone"><span class="glyphicon glyphicon-phone"></span> (619) 623-1556</p>
-      <p id="buson"><span class="glyphicon glyphicon-envelope"></span> sensoryfitnesstacoma@gmail.com</p>
+    	<span class="oi oi-icon-name" title="icon name" aria-hidden="true"></span>
+      <p id="location"><span class="oi oi-map-marker"></span> Tacoma WA</p>
+      <p id="telephone"><span class="oi oi-dial"></span> (619) 623-1556</p>
+      <p id="buson"><span class="oi oi-envelope-closed"></span> sensoryfitnesstacoma@gmail.com</p>
     </div>
     <div class="col-sm-7 slideanim">
       <div class="row">
