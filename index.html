@@ -51,7 +51,7 @@
   
   .container-fluid {
       padding: 60px 40px;
-      background-color: #d6f5f5;
+      background-color: #3399ff;
   }
   .bg-grey {
       background-color: #adebed;
@@ -77,16 +77,16 @@
       margin-bottom: 10px;
   }
   #services{
-  	background-color: #99e6e6;
+  	background-color: #99c2ff;
   }
   #testimonials{
-  	background-color: #33cccc;
+  	background-color: #66ccff;
   }
   #pricing{
   	background-color: #29a3a3;
   }
   #contact{
-  	background-color: #1f7a7a;
+  	background-color: #0066cc;
   	color: black;
   }
 
@@ -174,6 +174,11 @@
       -webkit-animation-duration: 1s;
       visibility: visible;
   }
+  #first-header{
+    background-color: blue;
+    color: black;
+  }
+
   @keyframes slide {
     0% {
       opacity: 0;
@@ -212,7 +217,8 @@
   </style>
 
 <body>
-<div class="container">  
+  <title>SENSORY FITNESS</title>
+<div id="first-header" class="container-fluid text-center"><h1>SENSORY FITNESS</h1></div>
 	<div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
 		<a class="navbar"></a>
 			<ul class="nav nav-pills nav-fill">
@@ -223,7 +229,7 @@
     		<a class="nav-link" href="#mission">MISSION</a>
   		</li>
   		<li class="nav-item">
-    		<a class="nav-link" href="services.html">SERVICES</a>
+    		<a class="nav-link" href="#services">SERVICES</a>
   		</li>
   		<li class="nav-item">
     		<a class="nav-link" href="#testimonials">TESTIMONIALS</a>
@@ -240,7 +246,7 @@
 </div>
 <div id="myCarouselExample" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
-    <div class="carousel-item active">
+    <div class="carousel-item active"> 
       <img class="d-block w-100" src="oneonone.jpg" alt="">
       	 <div class="carousel-caption">
          </div>
@@ -298,7 +304,8 @@
   <div class="row">
     <div class="col-sm-8">
   	<h2>MISSION</h2><br>
-      <h4><strong>MISSION:</strong>My mission is for people to increase whole body awareness, strength, and coordination to feel comfortable in their own bodies to move, interact, and gain experience throughout the word. 
+      <h4><strong>MISSION:</strong>It is my mission to improve sensory motor, sensory perception and thinking skills 
+      through specific exercises, games and activities to people with neuro-diversity.
  </h4>
   	</div>
   	 <div class="row">
@@ -312,6 +319,61 @@
     	</div>
 	</div>
 </div>
+	  <div id="services" class="container-fluid text-center">
+  <h1>SERVICES</h1>
+  <h5>Classes are primarily for but not limited to kids of all ages. (Adult classes are available!)</h5>
+  <div class = "row">
+	 <div class="col-xm-6 col-md-4">
+    	<div class="thumbnail">
+      		<div class="caption">
+      				<img src="sessions.jpg" alt="..." class="img-thumbnail">
+        	<h3>One-on-One Sessions</h3>
+        	<p>One-on-One sessions ensure that children get the attention they need to address their fitness
+        	and sensory needs. Everything from martial arts to obstacle courses to outdoor recreation
+        	is an option for clients to get fit, feel good, and discover or rediscover movement!</p>
+        	<p><a href="index.html#contact" class="btn btn-primary" role="button">Contact</a></p>
+      	</div>
+    	</div>
+  	</div>
+  	<div class="col-xm-6 col-md-4">
+    	<div class="thumbnail">
+      		<div class="caption">
+      				<img src="consultation.jpg" alt="..." class="img-thumbnail">
+        	<h3>Classes</h3>
+        	<p>Classes are primarily for adults but not limited to kids. Group Sessions provide a chance for socialization
+        	, team work, and are a ton of fun!!</p>
+        	<p><a href="index.html#contact" class="btn btn-primary" role="button">Contact</a></p>
+      	</div>
+    	</div>
+  	</div>
+  	<div class="col-xm-6 col-md-4">
+    	<div class="thumbnail">
+      		<div class="caption">
+      			<img src="oliveranduly.jpg" alt="..." class="img-thumbnail">
+        	<h3>Consultations</h3>
+        	<p>With experience in the classroom and schools, sensory integration and primitive reflex integration,
+        	and physical fitness Matt is qualified to collaborate with parents, teachers, and schools to discuss sensory 
+        	strategies, integrative exercises, and the importance of movement in multiple environments.</p>
+        	<p><a href="index.html#contact" class="btn btn-primary" role="button">Contact</a></p>
+      	</div>
+    	</div>
+  	</div>
+  	 <div class="col-xm-6 col-md-4">
+    	<div class="thumbnail">
+      		<div class="caption">
+      				<img src="wrkshop1.jpg" alt="" class="">
+      		<h2>WORKSHOPS</h2>		
+        	<h3>Workshop 1<br><h5>Sensory Strategies in the Classroom </h5></h3><br>
+        	<h3>Workshop 2<br><h5>PE for neuro-diversity </h5></h3><br>
+        	<h3>Workshop 3<br><h5>Sensory-Motor for Fitness Professionals to Train the Neuro-Diverse </h5></h3><br>
+         <p><a href="index.html#contact" class="btn btn-primary" role="button">Contact</a></p>
+      	</div>
+    	</div>
+  	</div>
+	</div>
+</div>
+</div>
+
 <!-- Container (Portfolio Section) -->
 
 <div id="testimonials" class="container-fluid text-center">  
@@ -397,7 +459,7 @@
       <p class="text-center"></span> <a href="mailto: sensoryfitnesstacoma@gmail.com?Subject=Contact%20Form" target="top">Contact Via Email</a></p>
 </div>
 <footer class="container-fluid text-center">
-  <p>Argiope Designs</p>
+  <a href="http://www.argiopedesigns.com">Argiope Designs</a>
 </footer>
 
 <script>
